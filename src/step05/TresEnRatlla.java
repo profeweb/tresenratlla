@@ -19,6 +19,7 @@ public class TresEnRatlla extends PApplet {
     }
 
     public void draw(){
+        //cvjkllkjhfghjklkjh
         background(200, 100, 100);
         t.display(this);
         if(t.hihaGuanyador){
