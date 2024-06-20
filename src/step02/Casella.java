@@ -1,17 +1,22 @@
 package step02;
 
 import processing.core.PApplet;
-import processing.core.PConstants;
 
 public class Casella {
 
+    // Enumerat amb els valors que es podran guardar en les caselles del tauler
     public enum VALOR { BLANC, CREU, CERCLE };
-
-    int fila, columna;
+    // Valor guardat de la casella
     VALOR valor;
 
+    // Números de fila i columna que ocupa la casella en el tauler
+    int fila, columna;
+
+
+    // Coordenades x,y i mida de la casella.
     int x, y, w;
 
+    // Constructor
     public Casella(int f, int c, int x, int y, int w){
         this.fila = f;
         this.columna = c;
@@ -21,10 +26,12 @@ public class Casella {
         this.w = w;
     }
 
+    // Setter per a la propietat valor
     public void setValor(VALOR v){
         this.valor = v;
     }
 
+    // Mètode per dibuixar la casella (emprant processing)
     public void display(PApplet p5){
         p5.pushStyle();
         p5.rectMode(p5.CORNER);
@@ -46,6 +53,7 @@ public class Casella {
         p5.popStyle();
     }
 
+    // Mètode que indica si el punt (x, y) es troba dins la casella (quadrada)
     public boolean estaDins(float x, float y){
         return (this.x<=x && x<=this.x+w && this.y<=y && y<=this.y+w);
     }

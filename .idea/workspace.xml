@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="d13f7556-fb68-4981-a3fc-3cd06f2ba471" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/step02/Casella.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/step02/Casella.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/step03/Tauler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/step03/Tauler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/step04/Tauler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/step04/Tauler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/step05/Tauler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/step05/Tauler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +54,7 @@
       <recent name="step02" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.step05.TresEnRatlla">
+  <component name="RunManager" selected="Application.TresEnRatlla">
     <configuration name="TresEnRatlla" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="step01.TresEnRatlla" />
       <module name="TresEnRatlla" />
@@ -118,11 +122,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TresEnRatlla" />
         <item itemvalue="Application.step05.TresEnRatlla" />
         <item itemvalue="Application.step04.TresEnRatlla" />
         <item itemvalue="Application.step03.TresEnRatlla" />
         <item itemvalue="Application.step02.TresEnRatlla" />
-        <item itemvalue="Application.TresEnRatlla" />
       </list>
     </recent_temporary>
   </component>
@@ -137,6 +141,9 @@
       <workItem from="1718087865628" duration="1260000" />
       <workItem from="1718089940709" duration="3742000" />
       <workItem from="1718093769462" duration="858000" />
+      <workItem from="1718094691454" duration="2089000" />
+      <workItem from="1718807525493" duration="1786000" />
+      <workItem from="1718864213996" duration="2526000" />
     </task>
     <task id="LOCAL-00001" summary="Tres en Ratlla">
       <created>1718093448037</created>
@@ -159,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1718094117692</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Tres en Ratlla">
+      <created>1718094775243</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1718094775243</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
