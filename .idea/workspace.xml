@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d13f7556-fb68-4981-a3fc-3cd06f2ba471" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/step07/Casella.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/step07/Tauler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/step07/TresEnRatlla.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/step08/Casella.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/step08/Tauler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/step08/TresEnRatlla.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,7 +37,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/tonim/Documents/CODE/TresEnRatlla/src/step07",
+    "last_opened_file_path": "C:/Users/tonim/Documents/CODE/TresEnRatlla/src/step08",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
@@ -45,6 +45,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tonim\Documents\CODE\TresEnRatlla\src\step08" />
       <recent name="C:\Users\tonim\Documents\CODE\TresEnRatlla\src\step07" />
       <recent name="C:\Users\tonim\Documents\CODE\TresEnRatlla\src\step06" />
       <recent name="C:\Users\tonim\Documents\CODE\TresEnRatlla\src\step05" />
@@ -55,26 +56,13 @@
       <recent name="step02" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TresEnRatlla">
+  <component name="RunManager" selected="Application.step08.TresEnRatlla">
     <configuration name="TresEnRatlla" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="step07.TresEnRatlla" />
       <module name="TresEnRatlla" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="step07.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="step03.TresEnRatlla" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="step03.TresEnRatlla" />
-      <module name="TresEnRatlla" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="step03.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,13 +109,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="step08.TresEnRatlla" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="step08.TresEnRatlla" />
+      <module name="TresEnRatlla" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="step08.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.step08.TresEnRatlla" />
         <item itemvalue="Application.TresEnRatlla" />
         <item itemvalue="Application.step06.TresEnRatlla" />
         <item itemvalue="Application.step05.TresEnRatlla" />
         <item itemvalue="Application.step04.TresEnRatlla" />
-        <item itemvalue="Application.step03.TresEnRatlla" />
       </list>
     </recent_temporary>
   </component>
@@ -145,7 +146,7 @@
       <workItem from="1718094691454" duration="2089000" />
       <workItem from="1718807525493" duration="1786000" />
       <workItem from="1718864213996" duration="14104000" />
-      <workItem from="1718892645710" duration="3265000" />
+      <workItem from="1718892645710" duration="7239000" />
     </task>
     <task id="LOCAL-00001" summary="Tres en Ratlla">
       <created>1718093448037</created>
@@ -196,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1718893433147</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Tres en Ratlla">
+      <created>1718895947368</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1718895947368</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
