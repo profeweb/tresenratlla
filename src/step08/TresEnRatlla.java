@@ -25,14 +25,14 @@ public class TresEnRatlla extends PApplet {
     }
 
     public void draw(){
+
         background(200, 100, 100);
         t.display(this);
 
         if(t.enJoc()){
 
             if(t.numTirades%2==1) {
-                println("MINIMAX ZONE");
-                t.callMinimax(0, Tauler.PLAYER.ORDINADOR);
+                t.cridadaMinimax(0, Tauler.PLAYER.ORDINADOR);
                 t.mou(t.getMillorMoviment(), Tauler.PLAYER.ORDINADOR);
                 t.numTirades++;
             }

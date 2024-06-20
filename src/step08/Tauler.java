@@ -27,10 +27,12 @@ public class Tauler {
 
     Casella[] casellesBuides;
 
-    Casella[] rootValues;
-    int numRootValues = 0;
+    // Conjunt de caselles vàlides
+    Casella[] valors;
+    int numValors = 0;
 
-    enum PLAYER { ORDINADOR, HUMA};
+    // Enumerat del jugador (humà o ordinador).
+    enum PLAYER {HUMA, ORDINADOR};
 
     public Tauler(int n, float w){
         caselles = new Casella[n][n];
@@ -47,8 +49,8 @@ public class Tauler {
             }
         }
 
-        rootValues = new Casella[n*n];
-        numRootValues = 0;
+        valors = new Casella[n*n];
+        numValors = 0;
     }
 
     public void display(PApplet p5){
@@ -149,15 +151,18 @@ public class Tauler {
         this.soClick = new SoundFile(p5, "click.wav");
     }
 
+
+    // Retorna el número de caselles del tauler (NxN)
     int numCaselles(){
         return caselles.length*caselles.length;
     }
 
+    // Indica si la partida segueix en joc o no
     boolean enJoc() {
-        if (guanyaOrdinador() || guanyaJugador()){
+        if (guanyaOrdinador() || guanyaPersona()){
             return false;
         }
-        else if (estaPlena()){
+        else if (estaPle()){
             return false;
         }
         else {
@@ -165,20 +170,24 @@ public class Tauler {
         }
     }
 
+    // Indica si guanya l'ordinador
     boolean guanyaOrdinador(){
         hihaGuanyador = comprovaGuanyador();
         return  hihaGuanyador && numTirades%2==0;
     }
 
-    boolean guanyaJugador(){
+    // Indica si guanya la Persona
+    boolean guanyaPersona(){
         hihaGuanyador = comprovaGuanyador();
         return  hihaGuanyador && numTirades%2==1;
     }
 
-    boolean estaPlena(){
-        return numTirades == caselles.length*caselles.length;
+    // Indica si totes les caselles del tauler són plenes
+    boolean estaPle(){
+        return numTirades == numCaselles();
     }
 
+    // Retorna un array amb totes les caselles buides del tauler
     Casella[] getCasellesBuides() {
 
         casellesBuides = new Casella[numCaselles() - numTirades];
@@ -195,46 +204,50 @@ public class Tauler {
         return casellesBuides;
     }
 
-    public int returnMin(int[] list) {
+    // Retorna el valor mínim
+    public int retornaMin(int[] llista) {
 
         int min = Integer.MAX_VALUE;
         int index = Integer.MIN_VALUE;
 
-        for (int i = 0; i < list.length; ++i) {
-            if (list[i] < min) {
-                min = list[i];
+        for (int i = 0; i < llista.length; ++i) {
+            if (llista[i] < min) {
+                min = llista[i];
                 index = i;
             }
         }
-        return list[index];
+        return llista[index];
     }
 
-    int returnMax(int[] list) {
+    // Retorna el valor màxim
+    int retornaMax(int[] llista) {
         int max = Integer.MIN_VALUE;
         int index = Integer.MIN_VALUE;
-        for (int i = 0; i < list.length; ++i) {
-            if (list[i] > max) {
-                max = list[i];
+        for (int i = 0; i < llista.length; ++i) {
+            if (llista[i] > max) {
+                max = llista[i];
                 index = i;
             }
         }
 
-        return list[index];
+        return llista[index];
     }
 
-    public void mou(Casella c, PLAYER player) {
-        if(player==PLAYER.HUMA) {
+    // Mou a la casella c segons el jugador
+    public void mou(Casella c, PLAYER jugador) {
+        if(jugador==PLAYER.HUMA) {
             caselles[c.fila][c.columna].valor = Casella.VALOR.CERCLE;
         }
-        else if(player==PLAYER.ORDINADOR) {
+        else if(jugador==PLAYER.ORDINADOR) {
             caselles[c.fila][c.columna].valor = Casella.VALOR.CREU;
         }
     }
 
+    // Algorisme MiniMax
     int minimax(int depth, PLAYER player) {
 
         if (guanyaOrdinador()){ return +1; }
-        if (guanyaJugador()){return -1; }
+        if (guanyaPersona()){return -1; }
 
         Casella[] casellesBuides = getCasellesBuides();
 
@@ -257,8 +270,8 @@ public class Tauler {
 
                     if (depth == 0) {
                         c.setValorMiniMax(currentScore);
-                        rootValues[numRootValues] = c;
-                        numRootValues++;
+                        valors[numValors] = c;
+                        numValors++;
                     }
 
                 } else if (player == PLAYER.HUMA) {//O's turn select the lowest from below minimax() call
@@ -272,30 +285,33 @@ public class Tauler {
         }
 
         if( player == PLAYER.ORDINADOR ){
-            return returnMax(marcadors);
+            return retornaMax(marcadors);
         }
-
-        return returnMin(marcadors);
+        else {
+            return retornaMin(marcadors);
+        }
     }
 
+    // Indica la casella del millor moviment
     Casella getMillorMoviment() {
 
         int max = Integer.MIN_VALUE;
         int best = Integer.MIN_VALUE;
 
-        for (int i = 0; i < numRootValues; ++i) {
-            if (max < rootValues[i].valorMiniMax) {
-                max = rootValues[i].valorMiniMax;
+        for (int i = 0; i < numValors; ++i) {
+            if (max < valors[i].valorMiniMax) {
+                max = valors[i].valorMiniMax;
                 best = i;
             }
         }
 
-        return rootValues[best];
+        return valors[best];
     }
 
-    void callMinimax(int depth, PLAYER player){
-        rootValues = new Casella[caselles.length*caselles.length];
-        numRootValues = 0;
+    // Crida a l'algorisme minimax
+    void cridadaMinimax(int depth, PLAYER player){
+        valors = new Casella[numCaselles()];
+        numValors = 0;
         minimax(depth, player);
     }
 }

@@ -12,6 +12,7 @@ public class Casella {
 
     float x, y, w;
 
+    // Valor de la casella segons el Minimax
     int valorMiniMax;
 
     public Casella(int f, int c, float x, float y, float w){
@@ -27,6 +28,7 @@ public class Casella {
         this.valor = v;
     }
 
+    // Setter de la propietat valorMiniMax
     public void setValorMiniMax(int m){
         this.valorMiniMax = m;
     }
