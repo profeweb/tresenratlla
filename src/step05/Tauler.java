@@ -7,8 +7,14 @@ public class Tauler {
     float midaCasella;
     Casella[][] caselles;
     boolean hihaGuanyador;
+
+    // Símbol del guanyador (X o O)
     char guanyador;
+
+    // Partida finalitzada
     boolean finalPartida;
+
+    // Número de tirades
     int numTirades;
 
     public Tauler(int n, float w){
@@ -45,7 +51,7 @@ public class Tauler {
         }
     }
 
-    public void checkMousePressed(PApplet p5){
+    public void casellaPitjada(PApplet p5){
         if(!finalPartida) {
             for (int f = 0; f < caselles.length; f++) {
                 for (int c = 0; c < caselles[f].length; c++) {

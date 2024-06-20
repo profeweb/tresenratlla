@@ -1,10 +1,10 @@
 package step03;
 
 import processing.core.PApplet;
-import step02.Casella;
 
 public class TresEnRatlla extends PApplet {
 
+    // Variable de classe Tauler
     Tauler t;
 
     public void settings(){
@@ -16,15 +16,18 @@ public class TresEnRatlla extends PApplet {
     }
 
     public void setup(){
+        // Creació d'un Tauler de 3x3 de tota l'amplada de la finestra
         t = new Tauler(3, width);
     }
 
     public void draw(){
         background(200, 100, 100);
+
+        // Dibuixa el tauler (i totes les seves caselles)
         t.display(this);
     }
 
     public void mousePressed(){
-        t.checkMousePressed(this);
+        t.casellaPitjada(this);
     }
 }

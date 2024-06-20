@@ -4,6 +4,7 @@ import processing.core.PApplet;
 
 public class TresEnRatlla extends PApplet {
 
+    // 3 variables de classe Casella
     Casella c1, c2, c3;
 
     public void settings(){
@@ -16,6 +17,7 @@ public class TresEnRatlla extends PApplet {
 
     public void setup(){
 
+        // Instanciació de les caselles amb el constructor
         c1 = new Casella(0, 0, 100, 100, 200);
         c1.setValor(Casella.VALOR.CERCLE);
 
@@ -27,6 +29,8 @@ public class TresEnRatlla extends PApplet {
 
     public void draw(){
         background(200, 100, 100);
+
+        // Dibuixam les 3 caselles
         c1.display(this);
         c2.display(this);
         c3.display(this);

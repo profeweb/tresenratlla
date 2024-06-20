@@ -21,14 +21,14 @@ public class TresEnRatlla extends PApplet {
     public void draw(){
         background(200, 100, 100);
         t.display(this);
-        if(t.guanyador){
+        if(t.hihaGuanyador){
             textAlign(CENTER); textSize(24); fill(0);
             text("GUANYADOR", width/2, height/2);
         }
     }
 
     public void mousePressed(){
-        t.checkMousePressed(this);
+        t.casellaPitjada(this);
         t.actualitzaGuanyador();
 
     }

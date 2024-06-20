@@ -19,7 +19,6 @@ public class TresEnRatlla extends PApplet {
     }
 
     public void draw(){
-        //cvjkllkjhfghjklkjh
         background(200, 100, 100);
         t.display(this);
         if(t.hihaGuanyador){
@@ -33,7 +32,7 @@ public class TresEnRatlla extends PApplet {
     }
 
     public void mousePressed(){
-        t.checkMousePressed(this);
+        t.casellaPitjada(this);
         t.actualitzaGuanyador();
         println("NUM TIRADES: "+ t.numTirades);
     }

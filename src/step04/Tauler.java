@@ -6,12 +6,14 @@ public class Tauler {
 
     float midaCasella;
     Casella[][] caselles;
-    boolean guanyador;
+
+    // Indica si hi ha alguna línia guanyadora
+    boolean hihaGuanyador;
 
     public Tauler(int n, float w){
         caselles = new Casella[n][n];
         this.midaCasella = w / n;
-        guanyador = false;
+        hihaGuanyador = false;
         for(int f = 0; f< caselles.length; f++){
             for(int c = 0; c< caselles[f].length; c++){
                 caselles[f][c] = new Casella(f, c, midaCasella *c, midaCasella *f, midaCasella);
@@ -27,11 +29,12 @@ public class Tauler {
         }
     }
 
+    // Actualitza l'estat de la propietat hihaGuanyador
     public void actualitzaGuanyador(){
-        guanyador = comprovaGuanyador();
+        hihaGuanyador = comprovaGuanyador();
     }
 
-    public void checkMousePressed(PApplet p5){
+    public void casellaPitjada(PApplet p5){
         for(int f = 0; f< caselles.length; f++){
             for(int c = 0; c< caselles[f].length; c++){
                 if(caselles[f][c].estaDins(p5.mouseX, p5.mouseY)){
@@ -48,6 +51,7 @@ public class Tauler {
         }
     }
 
+    // Comprova si els valors de la fila f són iguals
     public boolean filaIguals(int f){
         if (caselles[f][0].valor == caselles[f][1].valor && caselles[f][1].valor == caselles[f][2].valor && caselles[f][0].valor!= Casella.VALOR.BLANC){
             return true;
@@ -57,6 +61,7 @@ public class Tauler {
         }
     }
 
+    // Comprova si els valors de la columna c són iguals
     public boolean columnaIguals(int c){
         if (caselles[0][c].valor == caselles[1][c].valor && caselles[1][c].valor == caselles[2][c].valor && caselles[0][c].valor!= Casella.VALOR.BLANC){
             return true;
@@ -66,6 +71,7 @@ public class Tauler {
         }
     }
 
+    // Comprova si els valors de la diagonal ascendent són iguals
     public boolean diagonalAscIguals(){
         if (caselles[2][0].valor == caselles[1][1].valor && caselles[1][1].valor == caselles[0][2].valor && caselles[2][0].valor!= Casella.VALOR.BLANC){
             return true;
@@ -75,6 +81,7 @@ public class Tauler {
         }
     }
 
+    // Comprova si els valors de la diagonal descendent són iguals
     public boolean diagonalDescIguals(){
         if (caselles[0][0].valor == caselles[1][1].valor && caselles[1][1].valor == caselles[2][2].valor && caselles[0][0].valor!= Casella.VALOR.BLANC){
             return true;
@@ -84,6 +91,7 @@ public class Tauler {
         }
     }
 
+    // Comprova files, columnes i diagonals
     public boolean comprovaGuanyador(){
 
         for(int f = 0; f< caselles.length; f++){
