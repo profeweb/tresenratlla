@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="d13f7556-fb68-4981-a3fc-3cd06f2ba471" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/step06/TresEnRatlla.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/step06/TresEnRatlla.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/step07/TresEnRatlla.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/step07/TresEnRatlla.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/step08/TresEnRatlla.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/step08/TresEnRatlla.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stepFinal/TresEnRatlla.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stepFinal/TresEnRatlla.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,19 +72,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="step04.TresEnRatlla" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="step04.TresEnRatlla" />
-      <module name="TresEnRatlla" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="step04.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="step05.TresEnRatlla" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="step05.TresEnRatlla" />
       <module name="TresEnRatlla" />
@@ -120,13 +111,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="stepFinal.TresEnRatlla" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="stepFinal.TresEnRatlla" />
+      <module name="TresEnRatlla" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="stepFinal.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.step08.TresEnRatlla" />
         <item itemvalue="Application.TresEnRatlla" />
+        <item itemvalue="Application.stepFinal.TresEnRatlla" />
         <item itemvalue="Application.step06.TresEnRatlla" />
         <item itemvalue="Application.step05.TresEnRatlla" />
-        <item itemvalue="Application.step04.TresEnRatlla" />
       </list>
     </recent_temporary>
   </component>
@@ -146,7 +150,7 @@
       <workItem from="1718864213996" duration="14104000" />
       <workItem from="1718892645710" duration="10405000" />
       <workItem from="1718903181940" duration="598000" />
-      <workItem from="1718953350614" duration="404000" />
+      <workItem from="1718953350614" duration="1877000" />
     </task>
     <task id="LOCAL-00001" summary="Tres en Ratlla">
       <created>1718093448037</created>
@@ -225,7 +229,21 @@
       <option name="project" value="LOCAL" />
       <updated>1718903114946</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Tres en Ratlla">
+      <created>1718953763175</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1718953763175</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Tres en Ratlla">
+      <created>1718953804469</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1718953804469</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

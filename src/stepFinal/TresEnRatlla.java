@@ -1,6 +1,7 @@
 package stepFinal;
 
 import processing.core.PApplet;
+import processing.core.PFont;
 
 public class TresEnRatlla extends PApplet {
 
@@ -9,6 +10,9 @@ public class TresEnRatlla extends PApplet {
 
     // Dimensió del tauler
     final int N = 3;
+
+    // Fonts per mostrar textos
+    PFont font1, font2;
 
     public void settings(){
         size(800, 800);
@@ -22,6 +26,10 @@ public class TresEnRatlla extends PApplet {
         t = new Tauler(N, width);
         t.setImatges(this);
         t.setSoClick(this);
+
+        // Carregar fonts
+        font1 = createFont("Dimitri.ttf", 48);
+        font2 = createFont("Platinum.ttf", 24);
     }
 
     public void draw(){
@@ -38,16 +46,20 @@ public class TresEnRatlla extends PApplet {
             }
         }
         else {
+            fill(200, 150);
+            rect(0, 0, width, height);
             if (t.hihaGuanyador) {
                 textAlign(CENTER);
                 textSize(24);
                 fill(0);
+                textFont(font1);
                 text("GUANYADOR " + t.guanyador, width / 2, height / 2 - 20);
             }
             if (t.finalPartida) {
                 textAlign(CENTER);
                 textSize(24);
                 fill(0);
+                textFont(font2);
                 text("FINAL PARTIDA", width / 2, height / 2 + 20);
             }
         }
