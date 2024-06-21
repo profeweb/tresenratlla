@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d13f7556-fb68-4981-a3fc-3cd06f2ba471" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/stepFinal/Casella.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stepFinal/Tauler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stepFinal/TresEnRatlla.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,18 +28,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/tonim/Documents/CODE/TresEnRatlla/src/stepFinal",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/tonim/Documents/CODE/TresEnRatlla/src/stepFinal&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\tonim\Documents\CODE\TresEnRatlla\src\stepFinal" />
@@ -146,7 +144,9 @@
       <workItem from="1718094691454" duration="2089000" />
       <workItem from="1718807525493" duration="1786000" />
       <workItem from="1718864213996" duration="14104000" />
-      <workItem from="1718892645710" duration="10364000" />
+      <workItem from="1718892645710" duration="10405000" />
+      <workItem from="1718903181940" duration="598000" />
+      <workItem from="1718953350614" duration="404000" />
     </task>
     <task id="LOCAL-00001" summary="Tres en Ratlla">
       <created>1718093448037</created>
@@ -218,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1718903065331</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Tres en Ratlla">
+      <created>1718903114946</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1718903114946</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
